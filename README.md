@@ -15,30 +15,12 @@ TODO
 * you need to turn off 2-factor authentication.  --> see [this issue](https://github.com/expo/expo/issues/160)
 * decide on a bundleIdentifier.  --> see [this stackoverflow question](http://stackoverflow.com/questions/11347470/what-does-bundle-identifier-mean-in-the-ios-project)
 
-### Gather Icons for App Store
+### Gather Icons
 
-#### iPhone
-* 180px × 180px (60pt × 60pt @3x)
-* 120px × 120px (60pt × 60pt @2x)
-* 120px × 120px (40pt × 40pt @3x)
-* 80px × 80px (40pt × 40pt @2x)
-* 87px × 87px (29pt × 29pt @3x)
-* 58px × 58px (29pt × 29pt @2x)
-* 60px × 60px (20pt × 20pt @3x)
-* 40px × 40px (20pt × 20pt @2x)
-#### iPad Pro
-* 167px × 167px (83.5pt × 83.5pt @2x)
-* 80px × 80px (40pt × 40pt @2x)
-#### iPad, iPad mini
-* 152px × 152px (76pt × 76pt @2x)
-* 40px × 40px (20pt × 20pt @2x)
 #### App Store
 * 1024px × 1024px
 
-some more thoughts from stackoverflow: http://stackoverflow.com/questions/34329715/how-to-add-icons-to-react-native-app
-
-WARNING, do not have duplicate icons (exact same size, but different name). DOUBLE CHECK ACTUAL SIZE OF ICONS AND DELETE DUPLICATES
-Maybe use https://itunes.apple.com/us/app/prepo/id476533227?mt=12
+Expo will add icons in various sizes for your bundle so that it appropriately appears on different devices, and different contexts (like,  
 
 ### Gather Sceenshots for  App Store
 
