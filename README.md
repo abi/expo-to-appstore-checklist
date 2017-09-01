@@ -4,16 +4,25 @@ TODO
 
 
 * add directions about adding bundleIdentifer in dev console before going to itunes connect
-* make a not about SKU
-* Finish fastlane steps
+* make a note about SKU
+* Explain how to use TestFlight
+* When updating, you need to manually up the version in app.json, otherwise Apple won't let you upload two apps to the store
 
 
 ## PREQUESISITES
 
-* you need your apple teamID --> [get it here](https://developer.apple.com/account/#/membership)
-* you need your apple username and apple password. --> Or signup [here](https://developer.apple.com/register)
-* you need to turn off 2-factor authentication.  --> see [this issue](https://github.com/expo/expo/issues/160)
+Register for the [Apple Developer Program](https://developer.apple.com/) with your Apple ID (the name associated with this Apple ID will be the app developer that shows up on iTunes). 
+
+Write down safely:
+
+* Apple username
+* Apple password
+* Apple Team ID https://developer.apple.com/account/#/membership
+
+Note: Ensure that you don't have 2-factor authentication for your Apple ID.  --> see [this issue](https://github.com/expo/expo/issues/160)
+
 * decide on a bundleIdentifier.  --> see [this stackoverflow question](http://stackoverflow.com/questions/11347470/what-does-bundle-identifier-mean-in-the-ios-project)
+and SKU
 
 ### Gather Icons
 
@@ -22,15 +31,16 @@ TODO
 
 Expo will add icons in various sizes for your bundle so that it appropriately appears on different devices, and different contexts (like,  
 
-### Gather Sceenshots for  App Store
+### App Screenshots
 
-Screenshots. You can generate these using the Simulator and Command+S to take a screenshot. You must use Window > Scale > 100% (Command+1)
+You can generate these using the Simulator and Command+S to take a screenshot. You must use Window > Scale > 100% (Command+1)
 
-* REQUIRED one iPad Pro screenshot.
+* REQUIRED one iPad Pro screenshot (if, your app supports iPad).
 * REQUIRED one iPhone 7 Plus screenshot.
-* These are the highest resolutions for iPad and iPhone.
 
-### Gather Icons for Expo
+These are the highest resolutions for iPad and iPhone.
+
+### Expo Icons
 
 These icons will be used in expo and are added to your exp.json file:
 
@@ -44,6 +54,7 @@ The 48X48 should be used for push notifications, setup like so:
     "icon": "./assets/pathToFile.png", // Must be a .png.
   }
 ```
+
 and the 512x512 is on a top-level json property called icon:
 
 ```
@@ -58,8 +69,6 @@ and the 512x512 is on a top-level json property called icon:
     "backgroundColor": "#34495e",
   }
 ```
-
-
 
 # STEP 1
 
