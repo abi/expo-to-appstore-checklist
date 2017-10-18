@@ -8,6 +8,22 @@ TODO
 * Explain how to use TestFlight
 * When updating, you need to manually up the version in app.json, otherwise Apple won't let you upload two apps to the store
 
+# Updating the app after the initial build
+
+* Bump `version` and `ios/buildNumber` in `app.json`
+
+After the build is processed, it should be available for TestFlight, but you can still need to submit Export Compliance information.
+
+Expo does use IDFA, because Segment Analysis
+
+Segment guide
+https://segment.com/docs/sources/mobile/ios/quickstart/#step-5-submitting-to-the-app-store
+
+Check these boxes:
+
+ 1. “Attribute this app installation to a previously served advertisement”
+ 2. “Attribute an action taken within this app to a previously served advertisement”
+ 3. “I, YOUR_NAME, confirm that this app, and any third party
 
 ## PREQUESISITES
 
